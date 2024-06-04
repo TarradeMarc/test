@@ -13,6 +13,6 @@ username: ${{ github.actor }}
 password: ${{ github.token }}
 - name: Build the hello-docker Docker image
 run: |
-       docker build . --tag ghcr.io/tarrardemarc/myapp:latest
+       docker build . --tag ghcr.io/tarrademarc/myapp:latest
        docker run ghcr.io/tarrademarc/myapp:latest
        docker push ghcr.io/tarrademarc/myapp:latest
