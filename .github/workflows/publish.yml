@@ -40,4 +40,4 @@ jobs:
           context: .
           push: true
           file: ./dockertest2/Dockerfile
-          tags: ${{ env.REGISTRY }}/buz:latest
+          tags: ${{ env.REGISTRY }}/tarrademarc/buz:latest
