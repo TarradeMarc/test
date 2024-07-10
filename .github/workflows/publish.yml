@@ -33,3 +33,11 @@ jobs:
           push: true
           file: ./dockertest/Dockerfile
           tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+
+      - name: Build and push Docker image 2
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          push: true
+          file: ./dockertest2/Dockerfile
+          tags: ${{ env.REGISTRY }}/buz:latest
